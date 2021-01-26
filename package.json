@@ -1,0 +1,13 @@
+{
+  "name": "hackerearth",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "postinstall": "npm i --prefix server && npm i --prefix client",
+    "client:start": "npm start --prefix client",
+    "server:start": "npm start --prefix server",
+    "start": "concurrently -n server,client \"npm run server:start\" \"npm run client:start\""
+  },
+  "author": "Santhoshkumar J",
+  "license": "ISC"
+}
