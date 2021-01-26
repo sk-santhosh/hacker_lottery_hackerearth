@@ -8,7 +8,13 @@ export default class Lobbies extends Component {
     const { lobbies } = this.props;
     console.log(lobbies);
     if (lobbies.length === 0) {
-      return <div>Create Lobby</div>;
+      return (
+        <div
+          style={{ margin: "100px", display: "flex", justifyContent: "center" }}
+        >
+          <h4>Create Lobby</h4>
+        </div>
+      );
     } else {
       return (
         <Table basic="very">

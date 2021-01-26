@@ -26,10 +26,17 @@ export default class Dashboard extends Component {
     const { lobbies } = this.state;
     return (
       <Container>
+        <br />
+        <br />
         <div>
           <Header as="h1">Dashboard</Header>
-          <Header as="h2">Total Share : {this.state.total_house_share}</Header>
+          <Header as="h3">Total Share : {this.state.total_house_share}</Header>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <br />
         <div>
           <Header as="h1">Lobbies</Header>
